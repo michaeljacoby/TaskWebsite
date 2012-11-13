@@ -1,0 +1,9 @@
+<p>hello 2</p>
+<%= form_for User do |f| %>
+
+     <%= f.label :email, User.email %>
+     <%= f.check_box :CanEditUsers %>
+     <%= f.submit "Update" %>
+     
+<% end %>
+

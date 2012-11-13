@@ -1,0 +1,64 @@
+// Place all the styles related to the AdminTools controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import "bootstrap";
+
+#admin_tools_controller{
+
+
+
+
+.Side_Menu{
+float:left;
+width:100px;
+background-color:green;
+height: auto;
+min-height:600px;
+}
+
+.User_panel{
+min-width:950px;
+height:850px;
+}
+
+.Top_Menu{
+width:400px;
+margin:0 auto;
+min-height:50px;
+width:100%;
+background-color:red;
+}
+
+.Main_Menu{
+float:left;
+width:100%-100px;
+padding-left:50px;
+}
+
+
+.userdisplay{
+display: inline-block;
+}
+
+.userdisplay ul{
+padding-right:20px;
+}
+
+.userdisplay ul li{
+padding-right:10px;
+position:relative;
+display: inline;
+float: left;
+
+}
+
+.userdisplay ul li label{
+display: inline-block;
+width:auto;
+min-width:300px;
+}
+
+
+
+}

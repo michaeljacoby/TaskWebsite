@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Users</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body ID="Background">
+	<div class="toScale">
+			<div class="BG-White"
+			<section >
+				<div class="round shadowed BG-White">
+				<section>
+					<%= yield %>
+				</section>
+				</div>
+
+			</section>
+			</div>
+
+	</div>
+
+
+</body>
+</html>

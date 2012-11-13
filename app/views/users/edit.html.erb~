@@ -1,0 +1,18 @@
+<h1> Edit your information<h1>
+
+<%= form_for @user do |f| %>
+
+  <p><%= current_user.email %></p>
+
+  <p>
+   <%= f.label :password %><br />
+   <%= f.password_field :password %>
+  </p>
+
+  <p>
+   <%= f.label :password_confirmation %><br />
+   <%= f.password_field :password_confirmation %>
+  </p>
+  
+  <p class="actions"><%= f.submit "Update" %></p>
+<% end %>

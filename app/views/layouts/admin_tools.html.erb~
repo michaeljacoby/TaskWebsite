@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sandbox</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body ID="<%= params[:controller].parameterize %>_controller">
+
+		<div class="User_panel"
+		        <div class="Top_Menu">
+
+
+
+			</div>
+
+			<div class="Side_Menu">
+				<ul>    
+                                        <% if current_user %>  
+ 					<li><%= link_to "Log out", logout_path %>
+					<% else %>					
+					<li><%= link_to "Log in", login_path %></li>	
+					<li><%= link_to "Sign up", signup_path %></li>
+                                        <% end %>
+					<li><%= link_to "Home", welcome_path %></li>	
+					<li><%= link_to "About us", contact_path %></li>
+					<% if admin_signed_in? %>
+					<li><%= link_to "Admin", admin_dashboard_url %></li>
+					<% else %>
+					<% end %>
+					
+				</ul>
+			</div>
+
+
+
+
+			<div class="Main_Menu">
+
+						<div class="userdisplay">
+						
+							<%= yield %>
+						</div>
+
+			</div>
+
+
+
+		
+		</div>
+
+
+
+
+
+
+
+</body>
+</html>
