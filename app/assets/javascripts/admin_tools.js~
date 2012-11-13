@@ -2,9 +2,11 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/
 
-$(function() {
 
-	$('.edit_user input[type=checkbox]').click(function() {
-		$(this).parent('form').submit();
+$(function() {
+	$('.edit_user input[type=submit]').remove();
+	$('.checking').live( 'change',function() {
+		$(this).parents('form:first').submit();
 	});
 });
+
