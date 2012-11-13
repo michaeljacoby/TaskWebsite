@@ -1,16 +1,10 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.8'
-
-
 gem 'sqlite3'
-
 gem 'json'
-
 gem 'jquery-rails'
-
 gem 'bcrypt-ruby', :require => 'bcrypt'
-
 gem 'bootstrap-sass'
 
 
@@ -50,10 +44,10 @@ end
 # gem 'jbuilder'
 
 # Use unicorn as the app server
-# gem 'unicorn'
+ gem 'unicorn'
 
 # Deploy with Capistrano
-# gem 'capistrano'
+ gem 'capistrano'
 
 # To use debugger
 # gem 'ruby-debug'
