@@ -18,3 +18,12 @@
 
 
 
+
+
+$(function() {
+	$('.edit_user input[type=submit]').remove();
+	$('.checking').live( 'change',function() {
+		$(this).parents('form:first').submit();
+	});
+});
+
