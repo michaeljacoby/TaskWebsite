@@ -36,6 +36,12 @@ class ApplicationController < ActionController::Base
     redirect_to login_url
    end
   end
+
+  def all_messages
+
+  @all_messages = Messages.all
+
+  end
   
 
 
