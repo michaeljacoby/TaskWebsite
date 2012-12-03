@@ -3,6 +3,7 @@
 <p><%= current_user.email %></p>
 
 
-<h1>Userdashboards#main</h1>
-<p>Find me in app/views/userdashboards/main.html.erb</p>
+<div>
+<%= render :partial => 'task', :collection => @all_users %>
+</div>
 

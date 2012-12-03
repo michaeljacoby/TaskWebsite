@@ -1,13 +1,14 @@
-class SessionsController < ApplicationController
+class GeneralController < ApplicationController
+
 
   # Creates a session for the user and remembers it.
-  def create
+  def create_session
     user = User.find_by_email(params[:email])
       if user && user.authenticate(params[:password])
         session[:user_id] = user.id
         redirect_to root_url, :notice => "logged in!"
       else
-        redirect_to login_url, :notice => "Username or Password is invalid"
+        redirect_to root_url, :notice => "Username or Password is invalid"
       end
   end
 
@@ -17,4 +18,17 @@ class SessionsController < ApplicationController
     redirect_to root_url, :notice => "logged out!"
   end
 
+
+
+  def Welcome
+  end
+
+  def Contact
+  end
+
+  def SignUp
+  end
+
+  def Login
+  end
 end

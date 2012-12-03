@@ -11,14 +11,12 @@
 
 	<div class="toScale">
 
-			<section >
 				<div class="Menu_Small">
 				<section>
+<p>hello!</p>
 					<%= yield %>
 				</section>
 				</div>
-
-			</section>
 
 	</div>
 

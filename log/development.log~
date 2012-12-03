@@ -1,0 +1,371 @@
+
+
+Started POST "/" for 127.0.0.1 at 2012-11-30 00:56:59 -0600
+Processing by GeneralController#Welcome as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wSgXJcmG/sJJSKY/sLTicZuj4ibS3QS/6U6koBf6pkA=", "email"=>"michaelkjacoby@gmail.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+  Rendered general/Welcome.html.erb within layouts/general (0.1ms)
+  Rendered general/_newuser.html.erb (1.4ms)
+  Rendered general/_topmenu.html.erb (3.4ms)
+  Rendered general/_content.html.erb (0.1ms)
+Completed 200 OK in 45ms (Views: 44.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-30 00:56:59 -0600
+Served asset /application.css - 304 Not Modified (19ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-30 00:56:59 -0600
+Served asset /jquery.js - 304 Not Modified (50ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-11-30 00:56:59 -0600
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-30 00:56:59 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin_tools.js?body=1" for 127.0.0.1 at 2012-11-30 00:56:59 -0600
+Served asset /admin_tools.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2012-11-30 00:56:59 -0600
+Served asset /bootstrap-affix.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-11-30 00:56:59 -0600
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-11-30 00:56:59 -0600
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-11-30 00:56:59 -0600
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-11-30 00:56:59 -0600
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-11-30 00:56:59 -0600
+Served asset /bootstrap-tooltip.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-11-30 00:56:59 -0600
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-11-30 00:56:59 -0600
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-11-30 00:56:59 -0600
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-11-30 00:56:59 -0600
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-11-30 00:56:59 -0600
+Served asset /bootstrap-popover.js - 304 Not Modified (20ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-11-30 00:56:59 -0600
+Served asset /bootstrap.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-11-30 00:56:59 -0600
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-11-30 00:56:59 -0600
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/general.js?body=1" for 127.0.0.1 at 2012-11-30 00:56:59 -0600
+Served asset /general.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/userdashboards.js?body=1" for 127.0.0.1 at 2012-11-30 00:56:59 -0600
+Served asset /userdashboards.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-30 00:56:59 -0600
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-11-30 00:56:59 -0600
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/welcome" for 127.0.0.1 at 2012-11-30 00:58:47 -0600
+Processing by GeneralController#Welcome as HTML
+  Rendered general/Welcome.html.erb within layouts/general (0.0ms)
+  Rendered general/_newuser.html.erb (2.7ms)
+  Rendered general/_topmenu.html.erb (4.3ms)
+Completed 500 Internal Server Error in 44ms
+
+ActionController::RoutingError (No route matches {:action=>"show", :controller=>"general"}):
+  app/views/general/_newuser.html.erb:3:in `_app_views_general__newuser_html_erb__1032945118_84184020'
+  app/views/general/_topmenu.html.erb:12:in `_app_views_general__topmenu_html_erb__897816059__623713878'
+  app/views/layouts/general.html.erb:12:in `_app_views_layouts_general_html_erb___804743773__618194928'
+
+
+  Rendered /home/michael/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-30 00:58:59 -0600
+Served asset /application.css - 304 Not Modified (80ms)
+
+
+Started GET "/assets/admin_tools.js?body=1" for 127.0.0.1 at 2012-11-30 00:58:59 -0600
+Served asset /admin_tools.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-30 00:58:59 -0600
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-11-30 00:58:59 -0600
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-30 00:58:59 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2012-11-30 00:58:59 -0600
+Served asset /bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-11-30 00:58:59 -0600
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-11-30 00:58:59 -0600
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-11-30 00:58:59 -0600
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-11-30 00:58:59 -0600
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-11-30 00:58:59 -0600
+Served asset /bootstrap-modal.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-11-30 00:58:59 -0600
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-11-30 00:58:59 -0600
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-11-30 00:58:59 -0600
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-11-30 00:58:59 -0600
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-11-30 00:58:59 -0600
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-11-30 00:58:59 -0600
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-11-30 00:58:59 -0600
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/general.js?body=1" for 127.0.0.1 at 2012-11-30 00:58:59 -0600
+Served asset /general.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-11-30 00:58:59 -0600
+Served asset /bootstrap.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/userdashboards.js?body=1" for 127.0.0.1 at 2012-11-30 00:58:59 -0600
+Served asset /userdashboards.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-11-30 00:58:59 -0600
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-30 00:58:59 -0600
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2012-11-30 00:59:01 -0600
+Processing by GeneralController#Contact as HTML
+  Rendered general/Contact.html.erb within layouts/general (0.1ms)
+  Rendered general/_newuser.html.erb (1.7ms)
+  Rendered general/_topmenu.html.erb (3.5ms)
+Completed 500 Internal Server Error in 88ms
+
+ActionController::RoutingError (No route matches {:action=>"show", :controller=>"general"}):
+  app/views/general/_newuser.html.erb:3:in `_app_views_general__newuser_html_erb__1032945118_84184020'
+  app/views/general/_topmenu.html.erb:12:in `_app_views_general__topmenu_html_erb__897816059__623713878'
+  app/views/layouts/general.html.erb:12:in `_app_views_layouts_general_html_erb___804743773__618194928'
+
+
+  Rendered /home/michael/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-11-30 01:09:15 -0600
+Processing by GeneralController#Welcome as HTML
+  Rendered general/Welcome.html.erb within layouts/general (0.1ms)
+  Rendered general/_newuser.html.erb (1.5ms)
+  Rendered general/_topmenu.html.erb (3.1ms)
+Completed 500 Internal Server Error in 42ms
+
+ActionController::RoutingError (No route matches {:action=>"show", :controller=>"general"}):
+  app/views/general/_newuser.html.erb:3:in `_app_views_general__newuser_html_erb__1032945118_84184020'
+  app/views/general/_topmenu.html.erb:12:in `_app_views_general__topmenu_html_erb__897816059__623713878'
+  app/views/layouts/general.html.erb:12:in `_app_views_layouts_general_html_erb___804743773__618194928'
+
+
+  Rendered /home/michael/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-11-30 01:34:34 -0600
+Processing by GeneralController#Welcome as HTML
+  Rendered general/Welcome.html.erb within layouts/general (0.1ms)
+  Rendered general/_newuser.html.erb (1.7ms)
+  Rendered general/_topmenu.html.erb (3.6ms)
+Completed 500 Internal Server Error in 91ms
+
+ActionController::RoutingError (No route matches {:action=>"show", :controller=>"general"}):
+  app/views/general/_newuser.html.erb:3:in `_app_views_general__newuser_html_erb__1032945118_84184020'
+  app/views/general/_topmenu.html.erb:12:in `_app_views_general__topmenu_html_erb__897816059__623713878'
+  app/views/layouts/general.html.erb:12:in `_app_views_layouts_general_html_erb___804743773__618194928'
+
+
+  Rendered /home/michael/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-11-30 01:35:07 -0600
+Processing by GeneralController#Welcome as HTML
+  Rendered general/Welcome.html.erb within layouts/general (0.1ms)
+  Rendered general/_newuser.html.erb (1.6ms)
+  Rendered general/_topmenu.html.erb (3.4ms)
+Completed 500 Internal Server Error in 89ms
+
+ActionController::RoutingError (No route matches {:action=>"show", :controller=>"general"}):
+  app/views/general/_newuser.html.erb:3:in `_app_views_general__newuser_html_erb__1032945118_84184020'
+  app/views/general/_topmenu.html.erb:12:in `_app_views_general__topmenu_html_erb__897816059__623713878'
+  app/views/layouts/general.html.erb:12:in `_app_views_layouts_general_html_erb___804743773__618194928'
+
+
+  Rendered /home/michael/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-11-30 01:38:05 -0600
+Processing by GeneralController#Welcome as HTML
+  Rendered general/Welcome.html.erb within layouts/general (0.1ms)
+  Rendered general/_newuser.html.erb (1.5ms)
+  Rendered general/_topmenu.html.erb (3.2ms)
+Completed 500 Internal Server Error in 44ms
+
+ActionController::RoutingError (No route matches {:action=>"show", :controller=>"general"}):
+  app/views/general/_newuser.html.erb:3:in `_app_views_general__newuser_html_erb__1032945118_84184020'
+  app/views/general/_topmenu.html.erb:12:in `_app_views_general__topmenu_html_erb__897816059__623713878'
+  app/views/layouts/general.html.erb:12:in `_app_views_layouts_general_html_erb___804743773__618194928'
+
+
+  Rendered /home/michael/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-11-30 01:38:24 -0600
+Processing by GeneralController#Welcome as HTML
+  Rendered general/Welcome.html.erb within layouts/general (0.1ms)
+  Rendered general/_newuser.html.erb (1.7ms)
+  Rendered general/_topmenu.html.erb (3.5ms)
+Completed 500 Internal Server Error in 91ms
+
+ActionController::RoutingError (No route matches {:action=>"show", :controller=>"general"}):
+  app/views/general/_newuser.html.erb:3:in `_app_views_general__newuser_html_erb__1032945118_84184020'
+  app/views/general/_topmenu.html.erb:12:in `_app_views_general__topmenu_html_erb__897816059__623713878'
+  app/views/layouts/general.html.erb:12:in `_app_views_layouts_general_html_erb___804743773__618194928'
+
+
+  Rendered /home/michael/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-12-01 13:40:01 -0600
+Connecting to database specified by database.yml
+Processing by GeneralController#Welcome as HTML
+  Rendered general/Welcome.html.erb within layouts/general (6.0ms)
+  Rendered general/_newuser.html.erb (13.6ms)
+  Rendered general/_topmenu.html.erb (17.2ms)
+Completed 500 Internal Server Error in 1008ms
+
+ActionController::RoutingError (No route matches {:action=>"show", :controller=>"general"}):
+  app/views/general/_newuser.html.erb:3:in `_app_views_general__newuser_html_erb___373328033_92693000'
+  app/views/general/_topmenu.html.erb:12:in `_app_views_general__topmenu_html_erb__370637901__625669148'
+  app/views/layouts/general.html.erb:12:in `_app_views_layouts_general_html_erb__367874935_92924360'
+
+
+  Rendered /home/michael/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-12-01 13:41:10 -0600
+Processing by GeneralController#Welcome as HTML
+  Rendered general/Welcome.html.erb within layouts/general (0.1ms)
+  Rendered general/_newuser.html.erb (1.5ms)
+  Rendered general/_topmenu.html.erb (3.2ms)
+Completed 500 Internal Server Error in 44ms
+
+ActionController::RoutingError (No route matches {:action=>"show", :controller=>"general"}):
+  app/views/general/_newuser.html.erb:3:in `_app_views_general__newuser_html_erb___373328033_92693000'
+  app/views/general/_topmenu.html.erb:12:in `_app_views_general__topmenu_html_erb__370637901__625669148'
+  app/views/layouts/general.html.erb:12:in `_app_views_layouts_general_html_erb__367874935_92924360'
+
+
+  Rendered /home/michael/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-12-01 13:45:06 -0600
+Processing by GeneralController#Welcome as HTML
+  Rendered general/Welcome.html.erb within layouts/general (0.1ms)
+  Rendered general/_newuser.html.erb (1.8ms)
+  Rendered general/_topmenu.html.erb (4.1ms)
+Completed 500 Internal Server Error in 89ms
+
+ActionController::RoutingError (No route matches {:action=>"show", :controller=>"general"}):
+  app/views/general/_newuser.html.erb:3:in `_app_views_general__newuser_html_erb___373328033_92693000'
+  app/views/general/_topmenu.html.erb:12:in `_app_views_general__topmenu_html_erb__370637901__625669148'
+  app/views/layouts/general.html.erb:12:in `_app_views_layouts_general_html_erb__367874935_92924360'
+
+
+  Rendered /home/michael/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-12-01 13:45:21 -0600
+Processing by GeneralController#Welcome as HTML
+  Rendered general/Welcome.html.erb within layouts/general (0.1ms)
+  Rendered general/_newuser.html.erb (1.6ms)
+  Rendered general/_topmenu.html.erb (3.6ms)
+Completed 500 Internal Server Error in 86ms
+
+ActionController::RoutingError (No route matches {:action=>"show", :controller=>"general"}):
+  app/views/general/_newuser.html.erb:3:in `_app_views_general__newuser_html_erb___373328033_92693000'
+  app/views/general/_topmenu.html.erb:12:in `_app_views_general__topmenu_html_erb__370637901__625669148'
+  app/views/layouts/general.html.erb:12:in `_app_views_layouts_general_html_erb__367874935_92924360'
+
+
+  Rendered /home/michael/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)

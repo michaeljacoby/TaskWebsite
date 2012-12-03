@@ -2,9 +2,17 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-@import "bootstrap";
 
 #general_controller{
+
+/*******************************/
+/* this affects the whole page */
+/*******************************/
+
+
+html {
+    height:100%;
+}
 
 background: url(ParkbyDuncan-Large.jpg) no-repeat center center fixed;
 -webkit-background-size: cover;
@@ -13,169 +21,123 @@ background: url(ParkbyDuncan-Large.jpg) no-repeat center center fixed;
 background-size: cover;
 
 
+/***********************/
+/* Mixin region        */
+/* To help reduce code */
+/***********************/
 
-.TitleStyle{
-padding: 30px 0px 0px 100px;
-width:200px;
-float:right;
-font-size:100%;
+@mixin setbackground($F_color, $S_color){
+  background: $F_color;
+  background-image: -webkit-gradient(linear, left top, left bottom, from($F_color), to(S_color));
+  background-image: -webkit-linear-gradient(top, $F_color, S_color);
+  background-image: -moz-linear-gradient(top, $F_color, S_color);
+  background-image: -ms-linear-gradient(top, $F_color, S_color);
+  background-image: -o-linear-gradient(top, $F_color, S_color);
+  background-image: linear-gradient(top, $F_color, S_color);  
 }
 
-.clear{
-clear:both;
+@mixin setcorners($TL, $TR, $BL, $BR){
+  border-top-left-radius:$TL;
+  border-top-right-radius:$TR;
+  border-bottom-left-radius:$BL;
+  border-bottom-right-radius:$BR;
 }
 
 
+/***********************/
+/* Main menu           */
+/***********************/
 
 header {
-padding-top:10px;
-background-color: #fff;
+height:100px;
+margin: 10px auto;
+width:800px;
 }
 
-header img {
-padding: 1em;
-}
-
-section {
-font-size:100%;
-clear: both;
-}
-
-
-
-a.signup_button {
-margin-left: auto;
-margin-right: auto;
-display: block;
-text-align: center;
-width: 190px;
-color: #fff;
-background: #006400;
-font-size:150%;
-font-weight: bold;
-padding: 20px;
-box-shadow: 3px 3px 4px #666;
-}
-
-div.field, div.actions {
-	margin-bottom: 10px;
-}
-
-
-/* Styles for menus */
-
-.round-bottom{
-border-bottom-left-radius:10px;
-border-bottom-right-radius:10px;
-}
-.round-top{
-border-top-left-radius:10px;
-border-top-right-radius:10px;
-}
-
-.TopMenu {
-font: bold 14px Arial;
+header-menu {
+float:right;
+font: bold 16px Arial;
 white-space:nowrap;
 height:50px;
-margin-bottom: 10px;
-background-color:black;
-
-
+margin: 10px auto 0px auto;
 }
 
-.TopMenu ul{
-z-index:100;
-margin: 0px 0px 5px 8px;
-list-style-type: none;
-padding: 0px 20px 10px 20px;
+
+header-menu ul {
+float:right;
+list-style: none;
+padding: 0px 20px 0px 20px;
+background: #444;
+background:rgba(0,0,0,.2);
 width:95%;
+@include setcorners(.5m, .5m, .5m, .5m);
+
+
 
 }
 
-.TopMenu ul li{
-position:relative;
-display: inline;
-float: right;
-z-index: 9999 !important;
+header-menu li {
+float:left;
 }
 
-.TopMenu ul li a {
-	display: block;
-	color: white;
-	padding : 8px 0px 0px 20px;
-	color: #2d2b2b;
-	text-decoration: none;
+
+
+header-menu a {
+        float:left;
+	color: #555;
+        text-decoration: none;
+	padding: .8em 1em;
 	text-transform: uppercase;
-	}
-	
-.TopMenu ul li:last-child a {
-	padding-right: 0px;
-}	
-* html .TopMenu ul li a {
-	display: inline-block;
+        display: inline-block;
+        min-height:24px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #fff #ccc #999 #eee;
+        background: #clclcl;
+	background: -moz-linear-gradient(#f5f5f5, #c1c1c1);
+	background: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(#c1c1c1));
+	background: -webkit-linear-gradient(#f5f5f5, #c1c1c1);
+	background: -o-linear-gradient(#f5f5f5, #c1c1c1);
+	background: -ms-linear-gradient(#f5f5f5, #c1c1c1);
+	background: linear-gradient(#f5f5f5, #c1c1c1); 
 }
 
-.TopMenu ul li a:link, .TopMenu ul li a:visited{
-	color: #FFFFFF
+header-menu li:first-child a {
+	border-left: 0;
+	-moz-border-radius: 4px 0 0 4px;
+	-webkit-border-radius: 4px 0 0 4px;
+	border-radius: 4px 0 0 4px;
 }
 
-.TopMenu ul li a.selected{
-color: #FFFFFF;
-}
-
-.TopMenu ul li a:hover {
-	color: white;
-	
-}	
-
-
-
-/* sub menu */
-
-.TopMenu ul li ul{
-position: absolute;
-left: 0;
-display: none;
-/*visibility: hidden;
-*/background:FFF;
-    -moz-box-shadow: 0px 0px 10px #666;
-    -webkit-box-shadow: 0px 0px 10px #666;
-    box-shadow: 0px
-}
-	
-.TopMenu ul li ul li{
-display: list-item;
-float: none;
-border-bottom: 1px solid #E9E9E9;	
-}
-	
-.TopMenu ul li ul li a {
-    color: #9F9E9E !important;
-}
-.TopMenu ul li ul li a:hover {
-    color: #6F6E6E !important;
-}
-.TopMenu ul li ul li:last-child {
-    border-bottom: none;
+header-menu li:last-child a {
+	border-right: 0;
+	-moz-border-radius: 0 4px 4px 0;
+	-webkit-border-radius: 0 4px 4px 0;
+	border-radius: 0 4px 4px 0;
 }
 
 
 
-/* Special titles */
-
-
-
-
-button {
-    float: left;   
+header-menu .Login_Drop_down{
+  position: absolute;
+  top: 50px;
+  right:0;
+  margin-right:55px;
+  z-index: 999;    
+  padding: 15px;
+@include setbackground(#f5f5f5,#c1c1c1);
+  -moz-box-shadow: 0 2px 2px -1px rgba(0,0,0,.9);
+  -webkit-box-shadow: 0 2px 2px -1px rgba(0,0,0,.9);
+  box-shadow: 0 2px 2px -1px rgba(0,0,0,.9);
+  -moz-border-radius: 3px 0 3px 3px;
+  -webkit-border-radius: 3px 0 3px 3px;
+  border-radius: 3px 0 3px 3px;
 }
-#images div {
-    border: 1px solid #000;
-    float: left; 
-    height:205px;
-    margin: 0px;
-    text-align: center;
-    width: 385px;
+
+header-menu .login-toggle{
+
 }
+
+
 
 }

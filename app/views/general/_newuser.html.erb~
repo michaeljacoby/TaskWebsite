@@ -1,15 +1,4 @@
-<h1>Loggin</h1>
-
-<div id="page">
-  <% if flash[:alert] %>
-    <p class="flash-error"><%= flash[:alert] %></p>
-  <% end %>
-  <% if flash[:notice] %>
-    <p class="flash-notice"><%= flash[:notice] %></p>
-  <% end %>
-  <%= yield %>
-
-</div>
+<h1>Login</h1>
 
 <%= form_tag do %>
 
@@ -23,6 +12,5 @@
    <%= password_field_tag :password %>
   </p>
 
-  
   <p class="actions"><%= submit_tag "Login" %></p>
 <% end %>

@@ -18,3 +18,22 @@
 
 
 
+
+
+$(function() {
+	$('.edit_user input[type=submit]').remove();
+	$('.checking').live( 'change',function() {
+		$(this).parents('form:first').submit();
+	});
+});
+
+
+$(document).ready(function(){
+	$('.login-toggle').click(function(){
+	$(this).next('.Login_Drop_down').slideToggle();
+	$(this).toggleClass('active');
+	if ($(this).hasClass('active')) $(this).find('span').html('&#x25B2;')
+			else $(this).find('span').html('&#x25BC;')
+		})
+		  });
+

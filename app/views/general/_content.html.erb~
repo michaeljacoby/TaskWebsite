@@ -1,0 +1,7 @@
+
+				<div class="Menu_Large">
+
+					<%= yield %>
+
+				</div>
+

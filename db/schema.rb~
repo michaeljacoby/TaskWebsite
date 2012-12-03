@@ -34,7 +34,6 @@ ActiveRecord::Schema.define(:version => 20121111050331) do
     t.string   "resolvestatus"
     t.string   "assignee"
     t.string   "description"
-    t.boolean  "complete"
     t.datetime "created_at",    :null => false
     t.datetime "updated_at",    :null => false
   end

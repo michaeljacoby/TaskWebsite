@@ -1,7 +1,6 @@
 Sandbox::Application.routes.draw do
 
   resources :users
-  resources :sessions
   resources :general
   resources :admin_tools
   resources :userdashboards
@@ -17,14 +16,15 @@ Sandbox::Application.routes.draw do
   get "sign_up" => "users#new", :as => "sign_up"
 
   match "edit" => "users#edit", :as => :edit
+
   match "welcome" => "general#Welcome", :as => :welcome 
 
   match "contact" => "general#Contact", :as => :contact
 
   match "signup" => "users#new", :as => :signup
 
-  match "login" => "sessions#new", :as => :login
-  match "logout" => "sessions#destroy", :as => :logout
+  match "login" => "general#create_session", :as => :login
+  match "logout" => "general#destroy", :as => :logout
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

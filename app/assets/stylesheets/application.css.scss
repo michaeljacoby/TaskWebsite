@@ -15,6 +15,7 @@
 @import "users.css.scss";
 @import "sessions.css.scss";
 @import "admin_tools.css.scss";
+@import "userdashboards.css.scss";
 
 @mixin rounded($radius){
 -moz-border-radius: $radius;
@@ -22,15 +23,16 @@
 border-radius: $radius;
 }
 
+html, body{
+height:100%;
+}
+
+body{
+margin:0px;
+}
 
 .BG-White{
 background-color:white;
-}
-
-
-.toScale{
-width:800px;
-margin:0 auto;
 }
 
 .round {
@@ -60,4 +62,5 @@ min-height:300px;
 .shadowed {
 box-shadow: 3px 3px 4px #666;
 }
+
 

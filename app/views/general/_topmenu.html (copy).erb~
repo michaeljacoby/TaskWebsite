@@ -1,0 +1,25 @@
+		<div class="TopMenu shadowed">
+			<div style="float:right">
+                          
+			</div>
+			<div class="toScale">
+				<ul>    
+                                        <% if current_user %>  
+ 					<li><%= link_to "Log out", logout_path %>
+					<li><%= link_to "Dash Board", main_dashboard_path %>
+
+
+					<% else %>					
+					<li><%= link_to "Log in", login_path %></li>	
+					<li><%= link_to "Sign up", signup_path %></li>
+                                        <% end %>
+					<li><%= link_to "Home", welcome_path %></li>	
+					<li><%= link_to "About us", contact_path %></li>
+					<% if admin_signed_in? %>
+					<li><%= link_to "Admin", admin_dashboard_url %></li>
+					<% else %>
+					<% end %>
+					
+				</ul>
+			</div>
+		</div>

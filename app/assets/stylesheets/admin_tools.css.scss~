@@ -19,7 +19,7 @@ min-height:600px;
 
 .User_panel{
 min-width:950px;
-height:800px;
+height:850px;
 }
 
 .Top_Menu{

@@ -8,35 +8,33 @@
 </head>
 <body ID="<%= params[:controller].parameterize %>_controller">
 
-<div>
-	<div class="navbar">  
-		<div class="navbar-inner">  
-		    <div class="container">  
-		        <ul class="nav">  
-		            <a class="brand" href="#"><%= current_user.email %></a>  
-		            <li class="active"><a href="#">Home</a></li>  
-		            <li><a href="#">Blog</a></li>  
-	  
-		            <li class="dropdown" id="accountmenu">  
-		                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Tutorials<b class="caret"></b></a>  
-		                <ul class="dropdown-menu">  
-		                    <li><a href="#">PHP</a></li>  
-		                    <li><a href="#">MySQL</a></li>  
-		                    <li class="divider"></li>  
-		                    <li><a href="#">JavaScript</a></li>  
-		                    <li><a href="#">HTML5</a></li>  
-		                </ul>  
-		            </li>  
-		        </ul>  
-		    </div>  
-		</div>  
+<content>
+<header-menu>
+
+  <ul>  
+    <li><a href="#"><%= current_user.email %></a></li>
+    <li><%= link_to "Home", root_url %></li>
+  </ul>  
+
+</header-menu>
 
 
 
-					<section>
-						<%= yield %>
-					</section>
+ <side-menu>
+<ul>
+<li><p>testing</p></li>
+<li><p>testing</p></li>
+<li><p>testing</p></li>
+</ul>
+ </side-menu>
+ <main-screen>
+  <%= yield %>
+ </main-screen>
+</content>
 
-</div>
 
+
+
+
+</body>
 </html>

@@ -1,0 +1,24 @@
+
+<header-menu>
+  <ul>   
+    <li><%= link_to "Home", welcome_path %></li>	
+    <li><%= link_to "About us", contact_path %></li>
+    <% if current_user %> 
+    <li><%= link_to "Dash Board", main_dashboard_path %> 
+    <li><%= link_to "Log out", logout_path %>
+    <% else %>					
+      <li>
+        <a href="#" class="login-toggle" >Login</a>
+        <div class="Login_Drop_down">
+          <%= render "general/newuser" %>
+        </div>
+      </li>
+      <li><%= link_to "Sign up", signup_path %></li>
+      <% end %>
+
+      <% if admin_signed_in? %>
+        <li><%= link_to "Admin", admin_dashboard_url %></li>
+      <% else %>
+      <% end %>					
+  </ul>
+</header-menu>

@@ -6,6 +6,7 @@ class CreateTasks < ActiveRecord::Migration
       t.string :resolvestatus
       t.string :assignee
       t.string :description
+      t.boolean :complete
 
       t.timestamps
     end
