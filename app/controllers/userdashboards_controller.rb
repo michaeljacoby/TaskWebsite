@@ -1,26 +1,27 @@
 class UserdashboardsController < ApplicationController
 
-  # renders the main view.
+
   def show
+    @all_tasks = Task.all
+    rescue ActiveRecord::RecordNotFound
     render :main
   end
 
   def index
   end
 
-  def Task
-    @all_users = User.all
+  def main
+    @all_tasks = Task.where(createdbyuser: session[:user_id])
+    rescue ActiveRecord::RecordNotFound
+    respond_to do |format|
+        format.html
+        format.json { render json: @all_tasks}
+    end
   end
 
-
-  # A feature that will be added soon.
-  def create
-    @message = message.new(params[:message])
-      if @message.save
-        redirect_to root_url, :notice => "Message sent!"
-      else
-        redirect_to root_url
-      end
+  def list_tasks
+    @all_tasks = Task.all
   end
+
 
 end

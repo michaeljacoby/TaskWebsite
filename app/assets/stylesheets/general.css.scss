@@ -118,24 +118,27 @@ header-menu li:last-child a {
 
 
 
-header-menu .Login_Drop_down{
-  position: absolute;
-  top: 50px;
-  right:0;
-  margin-right:55px;
-  z-index: 999;    
-  padding: 15px;
-@include setbackground(#f5f5f5,#c1c1c1);
-  -moz-box-shadow: 0 2px 2px -1px rgba(0,0,0,.9);
-  -webkit-box-shadow: 0 2px 2px -1px rgba(0,0,0,.9);
-  box-shadow: 0 2px 2px -1px rgba(0,0,0,.9);
-  -moz-border-radius: 3px 0 3px 3px;
-  -webkit-border-radius: 3px 0 3px 3px;
-  border-radius: 3px 0 3px 3px;
-}
+
 
 header-menu .login-toggle{
+position:relative;
 
+
+
+}
+
+header-menu .Login_Drop_down{
+  position: absolute;
+  top: 86px;
+  margin-right:55px; 
+  padding: 15px;
+@include setbackground(#f5f5f5,#c1c1c1);
+//  -moz-box-shadow: 0 2px 2px -1px rgba(0,0,0,.9);
+// -webkit-box-shadow: 0 2px 2px -1px rgba(0,0,0,.9);
+//  box-shadow: 0 2px 2px -1px rgba(0,0,0,.9);
+//  -moz-border-radius: 3px 0 3px 3px;
+//  -webkit-border-radius: 3px 0 3px 3px;
+//  border-radius: 3px 0 3px 3px;
 }
 
 

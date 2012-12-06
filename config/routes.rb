@@ -1,14 +1,15 @@
 Sandbox::Application.routes.draw do
-
   resources :users
   resources :general
   resources :admin_tools
   resources :userdashboards
+  resources :tasks
 
-  match '', to: "userdashboards#main", constraints: {subdomain: /.+/}
 
-  match "userdashboards/main" => "userdashboards#main", :as => :main_dashboard
 
+
+
+  match "display" => "userdashboards#main", :as => :main_dashboard
   root :to => "general#Welcome"
 
   match "UserView" => "admin_tools#UserView", :as => :admin_dashboard
@@ -25,6 +26,7 @@ Sandbox::Application.routes.draw do
 
   match "login" => "general#create_session", :as => :login
   match "logout" => "general#destroy", :as => :logout
+  match "newtask" => "tasks#newtask", :as => :newtask
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

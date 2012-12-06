@@ -1,0 +1,10 @@
+<br>
+<%= form_for task do |f| %>
+<ul>
+
+     <li>Name        : <%= f.check_box  :name %></li>
+
+     <%= f.submit "Update" %>    
+
+</ul> 
+<% end %>
