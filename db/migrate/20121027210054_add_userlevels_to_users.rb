@@ -6,5 +6,6 @@ class AddUserlevelsToUsers < ActiveRecord::Migration
     add_column :users, :CanCreateUser, :boolean, :default => false
     add_column :users, :Active, :boolean, :default => true
     add_column :users, :UserStatus, :string
+
   end
 end
