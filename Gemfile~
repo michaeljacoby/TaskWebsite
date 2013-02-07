@@ -5,6 +5,7 @@ gem 'json'
 gem 'jquery-rails'
 gem 'bcrypt-ruby', :require => 'bcrypt'
 gem 'bootstrap-sass'
+gem 'jbuilder'
 
 
 
