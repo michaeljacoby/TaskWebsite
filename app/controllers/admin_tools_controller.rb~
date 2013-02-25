@@ -3,8 +3,8 @@ class AdminToolsController < ApplicationController
   before_filter :require_admin_login
 
   # Gathers all the user information to be displayed on the page.
-  def UserView
-    @all_users = User.all
+  def userview
+    @all_users = User.find(:all, :conditions => {:AdminScreen => 't'})
   end
 
   # a function that saves the changes to the users.
@@ -19,10 +19,6 @@ class AdminToolsController < ApplicationController
 
 
   def show
-  end
-
-  # Users can be edited in view, this is likely to be deleted.
-  def UserEdit
   end
 
 end

@@ -4,7 +4,7 @@ class AdminToolsController < ApplicationController
 
   # Gathers all the user information to be displayed on the page.
   def UserView
-    @all_users = User.all
+    @all_users = User.find(:all, :conditions => {:AdminScreen => 't'})
   end
 
   # a function that saves the changes to the users.

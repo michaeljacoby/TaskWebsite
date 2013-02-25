@@ -19,7 +19,6 @@
   <% if flash[:notice] %>
     <p class="flash-notice"><%= flash[:notice] %></p>
   <% end %>
-  <%= yield %>
 </div>
 
 <%= render "general/content" %>

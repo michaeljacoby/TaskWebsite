@@ -4,15 +4,17 @@ Sandbox::Application.routes.draw do
   resources :admin_tools
   resources :userdashboards
   resources :tasks
+  resources :cases
 
 
 
-
-
-  match "display" => "userdashboards#main", :as => :main_dashboard
   root :to => "general#Welcome"
 
+  match "ViewTasks" => "userdashboards#ViewTasks", :as => :main_dashboard
+
   match "UserView" => "admin_tools#UserView", :as => :admin_dashboard
+  
+  match "viewcase" => "cases#viewcase", :as => :view_case
   
   get "sign_up" => "users#new", :as => "sign_up"
 
@@ -26,7 +28,7 @@ Sandbox::Application.routes.draw do
 
   match "login" => "general#create_session", :as => :login
   match "logout" => "general#destroy", :as => :logout
-  match "newtask" => "tasks#newtask", :as => :newtask
+  match "newcase" => "cases#create", :as => :newcase
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

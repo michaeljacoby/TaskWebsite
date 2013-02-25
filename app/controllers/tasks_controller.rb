@@ -16,4 +16,15 @@ class TasksController < ApplicationController
         redirect_to root_url
       end
   end
+
+  def update
+    @task = Task.find(params[:id])
+      if @task.update_attributes(params[:task])
+        redirect_to main_dashboard_url
+      else
+        redirect_to root_url
+      end
+  end
+
+
 end

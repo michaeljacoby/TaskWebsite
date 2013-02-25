@@ -1,0 +1,27 @@
+<h1>All cases</h1>
+<p> This page is to test displaying and updating tasks </p>
+
+<% @cases.each do |task| %>
+<fieldset>
+    <ul>
+    <li><%= task.name %></li>
+    <li><%= task.description %>
+    <ul>
+
+
+<br>
+<%= form_for task, :remote => true do |f| %>
+<ul>
+
+     <li>Edit        : <%= f.text_field :name, :class => 'checking' %></li>
+     <li>Delete      : <%= f.text_field :description, :class => 'checking' %></li>
+     <%= f.submit "Update" %>    
+
+</ul> 
+<% end %>
+    <br />
+</fieldset>
+    
+
+    
+<% end %>

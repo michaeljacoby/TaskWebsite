@@ -1,0 +1,15 @@
+<h1>All cases</h1>
+<p> This page is to test displaying and updating tasks </p>
+
+<% Case.find_each(:conditions => "createdbyuser = 3" do |f| %>
+
+<%= form_for  do |f| %>
+  First name: <%= f.text_field :first_name %><br />
+  Last name : <%= f.text_field :last_name %><br />
+  Biography : <%= f.text_area :biography %><br />
+  Admin?    : <%= f.check_box :admin %><br />
+  <%= f.submit %>
+<% end %>
+
+<% end %>
+

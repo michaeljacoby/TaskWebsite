@@ -2,26 +2,39 @@ class UserdashboardsController < ApplicationController
 
 
   def show
-    @all_tasks = Task.all
-    rescue ActiveRecord::RecordNotFound
-    render :main
+   
   end
 
   def index
   end
 
-  def main
-    @all_tasks = Task.where(createdbyuser: session[:user_id])
-    rescue ActiveRecord::RecordNotFound
-    respond_to do |format|
-        format.html
-        format.json { render json: @all_tasks}
-    end
+  def ViewTasks
+  
+
+    @task_selected = Task.find(:all, :conditions => {:complete => 't'})
+
   end
 
-  def list_tasks
-    @all_tasks = Task.all
+  def update
+    @task = Task.find(params[:id])
+      if @task.update_attributes(params[:user])
+        redirect_to admin_dashboard_url
+      else
+        redirect_to edit_path
+      end
   end
+
+
+
+  def main
+   
+  end
+
+  def select_tasks
+   @task_selected = Task.find(:all, :conditions => {:complete => 't'})
+  end
+
+
 
 
 end

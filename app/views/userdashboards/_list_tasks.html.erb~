@@ -1,8 +1,8 @@
 <br>
-<%= form_for task do |f| %>
+<%= form_for task_select do |f| %>
 <ul>
 
-     <li>Name        : <%= f.check_box  :name %></li>
+     <li>Name        : <%= f.text_field  :name %></li>
 
      <%= f.submit "Update" %>    
 

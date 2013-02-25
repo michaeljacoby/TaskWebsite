@@ -1,0 +1,15 @@
+<br>
+<p> Task_form </p>
+
+<%= form_for @task_selected do |f| %>
+<ul>
+
+     <%= f.fields_for :tasks do |builder| %>
+       <%= render 'task_item', f: builder %>
+
+     <%= f.submit "Update" %>    
+
+</ul> 
+<% end %>
+<% end %>
+

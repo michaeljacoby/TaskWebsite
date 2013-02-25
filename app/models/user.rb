@@ -1,10 +1,10 @@
 class User < ActiveRecord::Base
-  attr_accessible :email, :password, :password_confirmation,:updated_at,:AdminScreen,:CanEditUsers,:CanDeleteUsers,:CanCreateUser,:Active,:UserStatus
+  attr_accessible :email, :password, :password_confirmation,:updated_at,:AdminScreen,:CanEditUsers,:CanDeleteUsers,:CanCreateUser,:Active,:UserStatus, :tasks_attributes
   has_secure_password
   validates_presence_of :password, :on => :create
   validates_uniqueness_of :email, :on => :create
-
-
+  has_many :tasks
+  accepts_nested_attributes_for :tasks
 end
 
 

@@ -3,5 +3,5 @@
 
 
 <div>
-<%= render :partial => 'user', :collection => @all_users %>
+<%= render :partial => 'user', :collection => @all_cases %>
 </div>

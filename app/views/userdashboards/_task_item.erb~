@@ -1,0 +1,5 @@
+<fieldset>
+  <%= f.label :name, "Task Name" %><br />
+  <% f.text_area :name %> <br />
+
+</fieldset>

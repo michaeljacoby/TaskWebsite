@@ -1,9 +1,7 @@
 
-
 <p><%= current_user.email %></p>
 
-
 <div>
-<%= render @tasks_all %>
+<%= render  :partial => '/tasks/task' %>
 </div>
 

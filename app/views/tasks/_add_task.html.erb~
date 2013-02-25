@@ -1,14 +1,10 @@
-<%= form_for @task do |f| %>
+<%= form_for task do |f| %>
 
   <p>
    <%= f.label :name %><br />
    <%= f.text_field :name %>
   </p>
 
-    <p>
-   <%= f.label :name %><br />
-   <%= f.hidden_field :createdbyuser, :value => @current_user.email %>
-  </p>
 
   <p>
    <%= f.label :Description %><br />
