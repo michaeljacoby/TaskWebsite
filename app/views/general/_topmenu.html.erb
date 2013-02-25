@@ -3,7 +3,7 @@
     <li><%= link_to "Home", welcome_path %></li>	
     <li><%= link_to "About us", contact_path %></li>
     <% if current_user %> 
-    <li><%= link_to "Dash Board", main_dashboard_path %> 
+    <li><%= link_to "Dash Board", view_case_path %> 
     <li><%= link_to "Log out", logout_path %>
     <% else %>					
       <li>

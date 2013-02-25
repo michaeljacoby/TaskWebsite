@@ -1,4 +1,3 @@
-
 <header-menu>
   <ul>   
     <li><%= link_to "Home", welcome_path %></li>	
