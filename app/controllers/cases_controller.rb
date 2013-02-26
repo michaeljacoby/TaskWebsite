@@ -6,7 +6,7 @@ class CasesController < ApplicationController
   end
 
   def viewcase
-    @cases = Case.find(:all, :conditions => {:createdbyuser => current_user})
+    @cases = Case.find(:all, :conditions => {:createdbyuser => current_user.id})
   end
 
   def create

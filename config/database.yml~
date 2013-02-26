@@ -24,10 +24,7 @@ test:
 
 
 production:
-  adapter: postgresql
-  database: sandbox_production
+  adapter: sqlite3
+  database: db/production.sqlite3
   pool: 5
   timeout: 5000
-  username: michael
-  password:
-
